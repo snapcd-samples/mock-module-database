@@ -18,7 +18,7 @@ output "port" {
   value       = 1433
 }
 
-output "admin_password" {
+output "database_admin_password" {
   description = "Master password for the database"
   value       = random_password.admin_password.result
   sensitive   = true
