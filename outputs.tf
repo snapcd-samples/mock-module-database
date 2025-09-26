@@ -5,7 +5,7 @@ output "database_id" {
 
 output "database_name" {
   description = "Name of the database"
-  value       = rvar.database_name
+  value       = var.database_name
 }
 
 output "database_endpoint" {
