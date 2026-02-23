@@ -12,3 +12,5 @@ resource "random_password" "admin_password" {
   special    = true
   depends_on = [time_sleep.wait_10s]
 }
+
+resource "random_uuid" "demo" {}
