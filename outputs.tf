@@ -23,3 +23,8 @@ output "database_admin_password" {
   value       = random_password.admin_password.result
   sensitive   = true
 }
+
+output "deploy_to_subnet_id" {
+  description = "Subnet that nodes were deployed to"
+  value       = var.deploy_to_subnet_id
+}
